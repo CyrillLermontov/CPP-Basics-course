@@ -1,0 +1,22 @@
+﻿cmake_minimum_required(VERSION 3.10)  # Указываем минимальную версию CMake, необходимую для сборки проекта
+
+project(MyProject)  # Устанавливаем имя проекта
+
+# Указываем компилятор
+set(CMAKE_CXX_STANDARD 11)  # Устанавливаем стандарт языка C++
+set(CMAKE_CXX_STANDARD_REQUIRED ON)  # Требуем строгое соблюдение стандарта
+
+# Добавляем исполняемый файл
+add_executable(MyExecutable main.cpp)  # Указываем, какие исходные файлы необходимо скомпилировать в исполняемый файл
+
+# Настройка дополнительных библиотек и зависимостей
+# target_link_libraries(MyExecutable ${EXTRA_LIBS})  # Пример: подключение дополнительных библиотек
+
+# Устанавливаем опции компилятора
+# target_compile_options(MyExecutable PRIVATE -Wall -Wextra)  # Пример: установка опций компиляции
+
+# Устанавливаем пути для заголовочных файлов
+# target_include_directories(MyExecutable PUBLIC ${PROJECT_SOURCE_DIR}/include)  # Пример: добавление директорий с заголовочными файлами
+
+# Устанавливаем дополнительные параметры сборки
+# set(CMAKE_BUILD_TYPE Release)  # Пример: установка типа сборки
